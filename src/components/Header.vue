@@ -17,10 +17,10 @@
         </ul>
         <ul class="d-flex flex-row">
             <li class="mr-10">
-                <a href="#">Subscription</a>
+                <a href="#">Sign In</a>
             </li>
             <li>
-                <a href="#">Connection</a>
+                <a href="#">Sign Up</a>
             </li>
         </ul>
     </header>
