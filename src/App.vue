@@ -6,16 +6,19 @@
   import data from './data/product';
   import { computed, reactive } from 'vue';
   
-  import type { ProductInterface , ProductCartInterface } from "./interfaces";
+  import type { ProductInterface , ProductCartInterface, FilterInterface } from "./interfaces";
+import { DEFAULT_FILTERS } from "./data/filters";
   
   
 
   const state = reactive<{
     products: ProductInterface[],
     cart: ProductCartInterface[],
+    filters: FilterInterface
   }>({
     products: data,
     cart: [],
+    filters: DEFAULT_FILTERS
   })
 
   function addProdToCart(productId: number): void {

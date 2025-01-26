@@ -6,6 +6,7 @@ import asusImg from '@/assets/img/asus.png';
 import rogImg from '@/assets/img/rog.png';
 import msiImg from '@/assets/img/msi.png';
 import padImg from '@/assets/img/pad.png';
+import type { ProductInterface } from '@/interfaces';
 
 export default [
   {
@@ -14,6 +15,7 @@ export default [
     title: 'Macbook Pro',
     description: 'Power and elegance.',
     price: 1500,
+    category: 'desktop',
   },
   {
     id: 2,
@@ -21,6 +23,7 @@ export default [
     title: 'Levono Pro',
     description: 'Performance for professionals.',
     price: 2300,
+    category: 'desktop'
   },
   {
     id: 3,
@@ -28,6 +31,7 @@ export default [
     title: 'Rider',
     description: 'Light and fast.',
     price: 1200,
+    category: 'gamer'
   },
   {
     id: 4,
@@ -35,6 +39,7 @@ export default [
     title: 'LDLC Benolo',
     description: 'Built to last.',
     price: 4500,
+    category: 'streaming'
   },
   {
     id: 5,
@@ -42,6 +47,7 @@ export default [
     title: 'Asus Gamer',
     description: 'Designed for gamers.',
     price: 3755,
+    category: 'gamer'
   },
   {
     id: 6,
@@ -49,6 +55,7 @@ export default [
     title: 'Rog Desktop',
     description: 'A battle station.',
     price: 2452,
+    category: 'streaming'
   },
   {
     id: 7,
@@ -56,6 +63,7 @@ export default [
     title: 'MSI Play',
     description: 'Powerful and versatile.',
     price: 1478,
+    category: 'gamer'
   },
   {
     id: 8,
@@ -63,5 +71,6 @@ export default [
     title: 'ThinkPad',
     description: 'Reliable everyday.',
     price: 899,
+    category: 'desktop'
   },
-];
+] as ProductInterface[]
