@@ -14,7 +14,7 @@
 
 <template>
     <div class="grid p-20">
-       <ShopProduct @add-product-to-cart="emit('add-product-to-cart',$event)" v-for="product of products" :product="product" />
+       <ShopProduct @add-product-to-cart="emit('add-product-to-cart',$event)" v-for="product of products" :key="product.id" :product="product" />
     </div>
 </template>
 
