@@ -53,8 +53,9 @@ function updateFilter(filterUpdate: FilterUpdate) {
     state.filters.priceRange = filterUpdate.priceRange;
   }else if(filterUpdate.category){
     state.filters.category = filterUpdate.category;
-  }else{
-    state.filters = DEFAULT_FILTERS;
+  }
+  else{
+    state.filters = { ...DEFAULT_FILTERS } ;
   }
 }
 

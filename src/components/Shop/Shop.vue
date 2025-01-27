@@ -17,7 +17,7 @@
 
 <template>
     <div class="d-flex flex-row">
-        <ShopFilters :filters="filters" @update-filter="emit('update-filter',$event)" class="shop-filter"/>
+        <ShopFilters :nbrOfProducts="products.length" :filters="filters" @update-filter="emit('update-filter',$event)" class="shop-filter"/>
         <ShopProductList @add-product-to-cart="emit('add-product-to-cart',$event)" :products="products"/>
     </div>
 </template>
